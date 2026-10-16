@@ -1,0 +1,141 @@
+/* ==========================================
+   1. GLOBAL STYLES (The Foundation)
+========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* ==========================================
+   2. HERO SECTION & TIMER
+========================================== */
+#hero {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: white;
+    padding: 100px 20px;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.timer-box {
+    margin-top: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+#countdown {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #ffdd57;
+}
+
+/* ==========================================
+   3. DYNAMIC 3-DAY SCHEDULE
+========================================== */
+#schedule {
+    background-color: white;
+}
+
+.tabs button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    background-color: #2a5298;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.tabs button:hover {
+    background-color: #1e3c72;
+}
+
+.day-content {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ==========================================
+   4. INTERACTIVE SPEAKER DIRECTORY (3D Cards)
+========================================== */
+.speaker-grid {
+    display: grid;
+    /* This handles the fluid layout adaptability automatically */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+/* The invisible box that gives the card 3D depth */
+.flip-card {
+    background-color: transparent;
+    height: 300px;
+    perspective: 1000px; /* Required for 3D effect */
+}
+
+/* The actual card that flips */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d; /* Keeps child elements in 3D space */
+}
+
+/* Trigger the rotation when you hover over the card with a mouse */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* The front and back of the cards */
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden; /* Hides the back side when facing away */
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.flip-card-front {
+    background-color: white;
+    color: black;
+}
+
+.flip-card-back {
+    background-color: #2a5298;
+    color: white;
+    transform: rotateY(180deg); /* Starts flipped around */
+}

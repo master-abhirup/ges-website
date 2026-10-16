@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GES 2026</title>
+    <!-- This links your CSS file to your HTML -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. HERO SECTION & TIMER -->
+    <section id="hero">
+        <h1>Global Entrepreneurship Summit</hd1>
+        <p>Innovation Starts Here</p>
+        
+        <div class="timer-box">
+            <h2>Summit Starts In:</h2>
+            <!-- We gave this an ID so JavaScript can find it later -->
+            <p id="countdown">Loading timer...</p> 
+        </div>
+    </section>
+
+    <!-- 2. DYNAMIC 3-DAY SCHEDULE -->
+    <section id="schedule">
+        <h2>Event Schedule</h2>
+        
+        <!-- These buttons will trigger our JavaScript tabs -->
+        <div class="tabs">
+            <button onclick="showDay('day1')">Day 1</button>
+            <button onclick="showDay('day2')">Day 2</button>
+            <button onclick="showDay('day3')">Day 3</button>
+        </div>
+        
+        <!-- The Schedule Content -->
+        <div id="day1" class="day-content">
+            <h3>Day 1: The Beginning</h3>
+            <p>10:00 AM - Opening Keynote</p>
+            <p>02:00 PM - Founder's Panel</p>
+        </div>
+        
+        <div id="day2" class="day-content" style="display: none;">
+            <h3>Day 2: The Grind</h3>
+            <p>11:00 AM - Startup Pitching</p>
+            <p>04:00 PM - Networking Mixer</p>
+        </div>
+        
+        <div id="day3" class="day-content" style="display: none;">
+            <h3>Day 3: The Climax</h3>
+            <p>10:00 AM - Angel Investor Meet</p>
+            <p>05:00 PM - Closing Ceremony</p>
+        </div>
+    </section>
+
+    <!-- 3. INTERACTIVE SPEAKER DIRECTORY -->
+    <section id="speakers">
+        <h2>Speaker Directory</h2>
+        
+        <!-- This div will become our CSS Grid -->
+        <div class="speaker-grid">
+            
+            <!-- Speaker Card 1 (Ready for 3D flip) -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h3>Jane Doe</h3>
+                        <p>CEO, FutureTech</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>Jane is an industry pioneer in AI.</p>
+                        <p>Session: AI in 2030</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- This links your JavaScript file to your HTML -->
+    <script src="script.js"></script>
+</body>
+</html>
