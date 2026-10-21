@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GES 2026 | Global Entrepreneurship Summit - IIT Kharagpur</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. SMART NAVIGATION BAR -->
+    <nav class="navbar">
+        <img src="ges.png" alt="GES Logo" class="logo">
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#why-attend">Why Attend</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#speakers">Speakers</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <img src="e_cell.png" alt="E-Cell Logo" class="logo">
+    </nav>
+
+    <!-- 2. HERO SECTION & TIMER -->
+    <section id="hero">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="glow-orb orb-3"></div>
+
+        <div class="particle p1"></div>
+        <div class="particle p2"></div>
+        <div class="particle p3"></div>
+        <div class="particle p4"></div>
+        
+        <h1>Global Entrepreneurship Summit 2026</h1>
+        <h2 class="theme-subtitle">Odyssey of Opulence</h2>
+        <p class="event-dates">30th January to 1st February</p>
+        
+        <div class="timer-box">
+            <h3 style="font-size: 1.1rem; color: #ffffff; margin-bottom: 5px; font-weight: normal;">Summit Starts In:</h3>
+            <p id="countdown">Loading timer...</p>
+        </div>
+        <br>
+        <a href="#register" class="cta-btn">Register Now</a>
+    </section>
+
+    <!-- 3. GLIMPSES OF GES (Dynamic Image Slider) -->
+    <section id="gallery">
+        <h2>Glimpses of GES</h2>
+        <div class="carousel-container hidden-element">
+            <!-- The 5 Dynamic Images -->
+            <img src="event1.jpg" alt="GES Event 1" class="carousel-img active-slide">
+            <img src="event2.jpg" alt="GES Event 2" class="carousel-img">
+            <img src="event3.JPG" alt="GES Event 3" class="carousel-img">
+            <img src="event4.JPG" alt="GES Event 4" class="carousel-img">
+            <img src="event5.jpg" alt="GES Event 5" class="carousel-img">
+            
+            <div class="carousel-overlay">
+                <h3>Experience the Opulence</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. EXPANDED ABOUT GES SECTION -->
+    <section id="about">
+        <h2>About The Summit</h2>
+        
+        <div class="glass-card hidden-element" style="margin-bottom: 60px;">
+            <p>The Global Entrepreneurship Summit (GES) is IIT Kharagpur's flagship international corporate summit conducted by the Entrepreneurship Cell. As one of Asia's largest student-run entrepreneurial summits, it serves as a dynamic nexus where thought leaders, venture capitalists, policymakers, and emerging innovators converge to network, pitch, and collaborate towards shaping the future of global business.</p>
+            
+            <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 20px; margin-top: 30px; font-weight: bold; color: #00f2fe;">
+                <div>
+                    <h3 style="font-size: 2rem;">25,000+</h3>
+                    <p style="color: white;">Footfall</p>
+                </div>
+                <div>
+                    <h3 style="font-size: 2rem;">80+</h3>
+                    <p style="color: white;">Global Speakers</p>
+                </div>
+                <div>
+                    <h3 style="font-size: 2rem;">10+</h3>
+                    <p style="color: white;">Competitions</p>
+                </div>
+            </div>
+        </div>
+
+        <h2 style="font-size: 2rem; margin-bottom: 30px;">Who Is It For?</h2>
+        <div class="about-grid">
+            <div class="about-card hidden-element">
+                <h3>For Startups & Founders</h3>
+                <p>Gain access to crucial seed funding, exclusive mentorship from industry veterans, and the opportunity to showcase your product to a global audience of top-tier Angel Investors and VC firms.</p>
+            </div>
+            <div class="about-card hidden-element">
+                <h3>For Students & Innovators</h3>
+                <p>Participate in world-class hackathons, secure premium internships through our Intern Carnival, and interact 1-on-1 with unicorn founders to ignite your entrepreneurial journey.</p>
+            </div>
+            <div class="about-card hidden-element">
+                <h3>For Investors & VCs</h3>
+                <p>Scout high-potential, deeply vetted startups emerging from India's premier tech institutions. Engage in closed-door networking dinners with fellow high-net-worth individuals and fund managers.</p>
+            </div>
+            <div class="about-card hidden-element">
+                <h3>For Corporate Professionals</h3>
+                <p>Stay ahead of the curve through expert-led workshops on GenAI, product leadership, and market strategies. Build powerful strategic partnerships and drive corporate innovation.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. WHY ATTEND SECTION -->
+    <section id="why-attend">
+        <h2>Why Attend GES?</h2>
+        <div class="features-grid">
+            <div class="feature-box hidden-element">
+                <h3>🤝 Networking</h3>
+                <p>Connect with over 1,000 founders, investors, and industry veterans from across the globe.</p>
+            </div>
+            <div class="feature-box hidden-element">
+                <h3>💰 Live Funding</h3>
+                <p>Pitch your business models directly to prominent Angel Investors and Venture Capitalists.</p>
+            </div>
+            <div class="feature-box hidden-element">
+                <h3>🧠 Workshops</h3>
+                <p>Master cutting-edge tech, AI, product leadership, and growth strategies in expert-led sessions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. DYNAMIC 3-DAY SCHEDULE -->
+    <section id="schedule">
+        <h2>Event Schedule</h2>
+        <div class="tabs hidden-element">
+            <button onclick="showDay('day1', this)" class="active-btn">Day 1</button>
+            <button onclick="showDay('day2', this)">Day 2</button>
+            <button onclick="showDay('day3', this)">Day 3</button>
+        </div>
+
+        <div id="day1" class="day-content hidden-element">
+            <h3>Day 1: The Genesis</h3>
+            <p><strong>10:00 AM:</strong> Opening Ceremony & Keynote Address</p>
+            <p><strong>01:00 PM:</strong> Intern Carnival - Direct recruitment drive with top startups</p>
+            <p><strong>04:00 PM:</strong> GenAI & Product Edge Workshop</p>
+            <p><strong>07:00 PM:</strong> Fireside Chat with Industry Pioneers</p>
+        </div>
+        <div id="day2" class="day-content" style="display: none;">
+            <h3>Day 2: The Grind</h3>
+            <p><strong>10:00 AM:</strong> Empresario - Business Model Competition Finals (₹1Cr+ Pool)</p>
+            <p><strong>01:30 PM:</strong> Invest-O-Spective - Simulated VC investment competition</p>
+            <p><strong>04:00 PM:</strong> Tech & Startup Product Expo</p>
+            <p><strong>08:00 PM:</strong> High-Net-Worth Founder Networking Night</p>
+        </div>
+        <div id="day3" class="day-content" style="display: none;">
+            <h3>Day 3: The Climax</h3>
+            <p><strong>10:00 AM:</strong> Investor-Startup Pitch Connect</p>
+            <p><strong>01:00 PM:</strong> Business Game & Strategy Finals</p>
+            <p><strong>05:00 PM:</strong> Valedictory Ceremony & Award Distribution</p>
+        </div>
+    </section>
+
+    <!-- 7. INTERACTIVE SPEAKER DIRECTORY -->
+    <section id="speakers">
+        <h2>Past speakers</h2>
+        <div class="speaker-grid">
+            <div class="flip-card hidden-element">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="sundar_pichai_google_ceo-1_220x220.jpg" alt="Sundar Pichai" class="speaker-img-full">
+                        <div class="speaker-name-box">
+                            <h3>Sundar Pichai</h3>
+                            <p>CEO, Google</p>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>IIT Kharagpur Alumnus driving global technological transformation.</p>
+                        <p style="margin-top: 15px;"><strong>Theme:</strong> Global Tech Leadership</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card hidden-element">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="ritesh.webp" alt="Ritesh Agarwal" class="speaker-img-full">
+                        <div class="speaker-name-box">
+                            <h3>Ritesh Agarwal</h3>
+                            <p>Founder & CEO, OYO</p>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>Pioneered global budget hospitality transformation in emerging markets.</p>
+                        <p style="margin-top: 15px;"><strong>Theme:</strong> Hyper-Scaling Startups</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card hidden-element">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="alakh.jpg" alt="Alakh Pandey" class="speaker-img-full">
+                        <div class="speaker-name-box">
+                            <h3>Alakh Pandey</h3>
+                            <p>Founder, PhysicsWallah</p>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>Revolutionized Indian EdTech through accessible, high-quality education.</p>
+                        <p style="margin-top: 15px;"><strong>Theme:</strong> Bootstrap to Unicorn</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card hidden-element">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="Anupam-Mittal.jpg" alt="Anupam Mittal" class="speaker-img-full">
+                        <div class="speaker-name-box">
+                            <h3>Anupam Mittal</h3>
+                            <p>Shark Tank Judge</p>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <p>Veteran angel investor shaping the Indian consumer internet ecosystem.</p>
+                        <p style="margin-top: 15px;"><strong>Theme:</strong> Venture Capital & Angel Investing</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. FOOTER & CONTACT -->
+    <footer id="contact" style="background: #0f172a; padding: 40px 20px; border-top: 3px solid #f97316; margin-top: 50px;">
+        <h2>Contact Us</h2>
+        <p style="color: #94a3b8; margin-bottom: 20px;">Entrepreneurship Cell, IIT Kharagpur</p>
+        <p>Email: <a href="mailto:contact@ecell-iitkgp.org" style="color: #00f2fe; text-decoration: none;">contact@ecell-iitkgp.org</a></p>
+        <p style="margin-top: 20px; font-size: 0.9rem; color: #64748b;">© 2026 Entrepreneurship Cell, IIT Kharagpur. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
